@@ -1,13 +1,14 @@
 let values = [5, 3, 7, 10,8, 2, 9, 11, 20];
 
+//Irá dobrar os valores do array 
 let doubleValues = values.map((value) => {
     return value * 2;
 });
 
-let sumDoubleValues = doubleValues.map((value) => {
-    return 
-    
-});
+var tot = 0;
+let sumDoubleValues = doubleValues.reduce((index, value) => {
+    return value + index
+}, 0);
 
 console.log(values);
 console.log(doubleValues);
