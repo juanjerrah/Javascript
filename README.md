@@ -1,1 +1,1 @@
-testando
+Alguns códigos que faço para estudar/treinar JavaScript
