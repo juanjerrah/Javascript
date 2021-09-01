@@ -1,6 +1,8 @@
 let rockPaperScissors = () => {
+    
     let input = require('prompt-sync')();
     let player1 = '';
+    let player2 = '';
     while(true){
 
         while(true){
@@ -24,7 +26,7 @@ let rockPaperScissors = () => {
         }
         
         let random = Math.floor(Math.random() * 3);
-        let player2 = '';
+        player2 = '';
 
         switch (random) {
             case 0:
