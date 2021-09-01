@@ -1,19 +1,25 @@
 let rockPaperScissors = () => {
     let input = require('prompt-sync')();
-
+    let player1 = '';
     while(true){
 
         while(true){
             console.log('|Escolha dentre as opções abaixo| \n------------------ \n|Pedra| \n|Papel| \n|Tesoura| \n------------------');
             
-            let player1 = input('Digite a sua opção: ').toLowerCase();
+            player1 = input('Digite a sua opção: ').toLowerCase();
             console.log('\n---------------------')
 
             if(player1 === 'pedra' || player1 === 'papel' || player1 === 'tesoura') {
                 break;
             }else{
                 console.log('Digite uma opção válida');
-                return;
+                console.log('\n---------------------')
+                let opc1 = input('Deseja tentar novamente? [S/N]: ').toLowerCase();
+                console.log('\n---------------------')
+                if(opc1 !== 's'){
+                    console.log('Saindo...')
+                    break;
+                }
             }
         }
         
