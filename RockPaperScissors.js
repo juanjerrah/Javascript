@@ -1,6 +1,9 @@
 let rockPaperScissors = () => {
-    
-    let input = require('prompt-sync')();
+    /**
+     * Coloque o comando 'npm install prompt-sync' no cli para poder usar
+     * este programa!
+     */
+    let input = require('prompt-sync')(); 
     let player1 = '';
     let player2 = '';
     while(true){
